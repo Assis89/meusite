@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER E MENU */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.21);
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 10px; /* espaço entre os botões */
+}
+
+nav ul li a {
+    display: block; /* ocupa todo o espaço do li */
+    padding: 20px 20px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px; /* bordas arredondadas no hover */
+}
+
+nav ul li a:hover {
+    background-color: rgb(236, 192, 16);
+    color: white;
+}
+
+/* INICIO BODY*/
+body {
+    background-image: url("./imagens/v748-toon-103.jpg");
+    background-attachment: fixed;
+}
+
+/* INICIO MAIN*/
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+#intro {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#apresentacao p:nth-child(1) {
+    font-size: 30px;
+}
+
+#apresentacao p:nth-child(2) {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#redes-sociais {
+    display: flex;
+    gap: 20px;
+}
+
+#redes-sociais img {
+    width: 45px;
+}
+
+#apresentacao p:nth-child(2) span {
+    color:  rgb(59, 63, 179);
+}
+
+#intro button {
+    padding: 14px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#intro button:hover {
+    color:  rgb(236, 192, 16);
+    background-color: #222;
+}
+
+/* INICIO SOBRE MIM*/
+
+#hobbie {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    height: 100vh; /* corrigido para vh */
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+#resumo {
+    margin-top: 10%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#hobbie {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#resumo h2, #hobbie h2 {
+    font-size: 50px;
+    color: rgb(59, 63, 179);
+}
+
+#resumo p, #hobbie ul li {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/*INICIO DO CONTATO*/
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+#contato h2 {
+    margin-top: 5%;
+    font-size: 50px;
+    color:rgb(59, 63, 179);
+}
+
+#contato p {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#contato form {
+    text-align: left;
+    font-weight: 600;
+}
+
+#contato form input, textarea {
+    height: 40px;
+    width: 400px;
+    max-width: 400px;
+    padding-inline: 5px;
+}
+
+/* Estilização do footer */
+footer {
+    background-color: rgb(59, 63, 179); /* cor principal usada no site */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+footer .container-footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer-nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer .footer-nav a:hover {
+    color: rgb(236, 192, 16); /* amarelo vibrante no hover, igual ao menu */
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 950px) {
+   
+    header {
+        flex-direction: column;
+    }
+    /* INÍCIO DO MAIN*/
+
+    #intro {
+        padding-inline: 20px;
+    }
+
+    #apresentacao p:nth-child(1) {
+        font-size: 27px;
+    }
+
+    #apresentacao p:nth-child(2) {
+        font-size: 37px;
+    }
+
+    #img-dev {
+        display: none;
+    }
+
+    /* INÍCIO DO SOBRE MIM*/
+
+    #hobbie {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #resumo, #hobbie {
+        margin-top: 0;
+        padding-inline: 20px;
+    }
+
+    #resumo h2, #hobbie {
+        font-size: 40px;
+    }
+
+    #resumo, #hobbie ul li {
+        font-size: 15px;
+    }
+
+    /* INÍCIO CONTATO*/
+
+    #contato {
+        padding-inline: 20px;
+    }
+
+    #contato h2 {
+        font-size: 40px;
+    }
+
+    #contato form input, textarea {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer .container-footer {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 14px;
+    }
+
+    footer .footer-nav a {
+        margin: 0 5px;
+    }
+}

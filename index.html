@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apresentação pessoal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Portifólio</h1>
+      <nav>
+        <ul>
+          <li><a href="#quemSou">Quem sou eu</a></li>
+          <li><a href="#hobbie">Hobbie</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="intro">
+        <div id="apresentacao">
+          <p>Olá, seja bem-vindo(a) a minha apresentação pessoal</p>
+          <p>Meu nome é <span>Thiago de Assis</span> sou soldado da polícia militar há 5 anos. E estou matriculado no 1º Curso de Análise e Desenvolvimento da Polícia Miliar (CADSPM)</p>
+        </div>
+        <div id="redes-sociais">
+          <a href="#">
+            <img src="imagens/icons8-github-50.png" alt="" />
+          </a>
+
+          <a href="#">
+            <img src="imagens/icons8-linkedin-50.png" alt="" />
+          </a>
+        </div>
+        <a href="#quemSou">
+          <button>Conheça mais sobre mim</button>
+        </a>
+      </div>
+
+      <div id="img-breve">
+        <img
+          src="imagens/breve2.jpg"
+          alt=""
+        />
+      </div>
+    </main>
+
+    <section id="quemSou">
+      <div id="resumo">
+        <h2>Quem sou eu</h2>
+        <p>
+          Meu nome é Thiago de Assis sou aluno do curso desenvolvimento Full-Stack desde 28 de Abril
+          de 2025. Comecei a estudar HTML/CSS e hoje tenho conhecimento de
+          diversas tecnologias.<br/><br/>
+          Espero com a conclusão desse curso estar capacitado para desenvolver aplicações web e aplicativos móveis. <br>
+          E assim a sonhada classificação na DSI e poder ajudar está diretoria em expansão e me desenvolver como profissional na aréa de TI. 
+        </p>
+      </div>
+    </section>
+
+    <section id="hobbie">
+        <div id="resumo">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Família</li>
+          <li>Técnologias</li>
+          <li>Esportes</li>
+        </ul>
+      </div>
+    </section>
+    
+
+    <section id="contato">
+      <h2>Você pode me enviar uma mensagem!</h2>
+      <p>
+        Preencha o seu nome, seu e-mail e escreva a mensagem que deseja enviar
+        para mim. logo quando eu puder, irei te responder. <br /><br />
+        Desde já, agradeço seu contato!
+      </p>
+
+      <form>
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" required /><br /><br />
+
+        <label for="email">E-mail:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br /><br />
+
+        <input id="btEnviar" type="submit" value="Enviar" />
+      </form>
+    </section>
+
+     <footer>
+      <div class="container-footer">
+        <p>© 2025 Thiago de Assis. || Todos os direitos reservados.</p>
+        <nav class="footer-nav">
+          <a href="#quemSou">Quem sou eu</a>
+          <a href="#hobbie">Hobbies</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
